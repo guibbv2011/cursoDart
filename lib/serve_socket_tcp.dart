@@ -21,8 +21,11 @@ void Client() async {
   print('enviando msg do ${client.remoteAddress}, ${client.port}: Nice!');
 }
 
-void HttpGet() async {
-  var url = 'http://api.binance.com/api/v3/depth';
+void HttpGet(request) async {
+  var bapi = "https://api.binance.com";
+  var query = '/api/v3/depth';
+  query += '?symbol=$request&limit=10';
+  var url = bapi + query;
   var response = await http.get(url);
   print('O servidor respondeu com status ${response.statusCode}');
   print('O corpo da request é: \n\n ${response.body}');
