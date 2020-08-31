@@ -3,8 +3,6 @@
 //import 'dart:async';
 
 //import 'package:cursoDart/GetApi.dart';
-import 'dart:convert';
-
 ///import 'package:cursoDart/serve_socket_tcp.dart';
 //import 'package:cursoDart/gzip_x_zlib.dart';
 //import 'package:cursoDart/printos.dart';
@@ -33,9 +31,7 @@ void main() async {
   //HttpGet('BTCUSDT');
   //-=-=-=--=-=-=--=-=-=--=-=-=--=-=-=-
 
-  //-=-=-=--=-=-= HttpGet =-=-=--=-=-=-
-  JsonEncodeSerial();
-  //JsonDecodeSerial();
-
+  //-=-=-=--=-=-= JSON Serialize =-=-=--=-=-=-
+  JsonSerial();
   //-=-=-=--=-=-=--=-=-=--=-=-=--=-=-=-
 }
